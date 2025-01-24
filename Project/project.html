@@ -5,30 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="project.css">
-    <title>Projects</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <title>My Projects</title>
+    <style>
+        /* Basic CSS for the structure (you can move this to your CSS files) */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #77c4a7;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+        header span {
+            color: #fff3e0; /* Soft accent color */
+        }
+        main {
+            padding: 0 10%;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .project {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .project h2 {
+            color: #77c4a7;
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+        }
+        .project p {
+            color: #555;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        .project a {
+            display: inline-block;
+            margin-top: 10px;
+            font-size: 1rem;
+            color: #77c4a7;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .project a:hover {
+            color: #3a9e7a;
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .projects {
+                grid-template-columns: 1fr;
+            }
+            header h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>My Projects</h1>
+        <h1>My <span>Projects</span></h1>
     </header>
     <main>
         <div class="projects">
+            <!-- ReflexIQ-Tracker Project -->
             <div class="project" data-aos="fade-up">
-                <h2>Project 1: Portfolio Website</h2>
-                <p>A simple animated website showcasing my skills and projects using HTML, CSS, and JavaScript.</p>
+                <h2>ReflexIQ-Tracker</h2>
+                <p>This application measures your reaction time using a visual stimulus similar to a Formula One race start sequence. It prompts you to press Enter quickly after a series of lights turn off to measure your reaction time in milliseconds.</p>
+                <a href="https://github.com/MrS0lver/ReflexIQ-Tracker" target="_blank">View on GitHub</a>
             </div>
+            <!-- Smart Notepad Project -->
             <div class="project" data-aos="fade-up" data-aos-delay="200">
-                <h2>Project 2: AI Chatbot</h2>
-                <p>A chatbot developed using Python and Natural Language Processing techniques.</p>
+                <h2>Smart Notepad with Python</h2>
+                <p>Hey Guys! I'm Mr.Solver, and welcome to the Smart Notepad project! 🚀 This Python-based notepad offers a unique blend of convenience and functionality, allowing users to seamlessly write, read, and even speak their notes. 💬✍️ With just a few lines of code, you can transform your traditional note-taking experience into an interactive and efficient process.</p>
+                <a href="https://github.com/MrS0lver/S_NOTEPAD" target="_blank">View on GitHub</a>
             </div>
         </div>
     </main>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+        AOS.init(); // Initialize AOS for animations
     </script>
 </body>
 </html>
-
-
-

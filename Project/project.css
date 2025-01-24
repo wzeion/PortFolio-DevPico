@@ -1,17 +1,17 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: #f9f9f9;
-    color: #333;
+    background: black;
+    color: #ffffff;
     overflow: hidden; 
     height: 100vh; 
 }
 
 
 header {
-    background: #333;
-    color: #fff;
+    background: rgba(20, 1, 1, 0.236);
+    color: rgb(255, 255, 255);
     padding: 20px 0;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -46,7 +46,7 @@ main {
 
 
 .project {
-    background: #fff;
+    background: grey;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -56,19 +56,19 @@ main {
 
 .project:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 15px rgba(7, 148, 35, 0.2);
 }
 
 .project h2 {
     font-size: 1.8rem;
-    color: #333;
+    color: #ffffff;
     margin-bottom: 10px;
 }
 
 .project p {
     font-size: 1rem;
     line-height: 1.6;
-    color: #666;
+    color: #ffffff;
 }
 
 
