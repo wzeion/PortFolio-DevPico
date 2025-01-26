@@ -37,11 +37,11 @@ main {
 
 
 .projects {
-    width: 100%;
-    max-width: 800px;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
+    max-height: 500px; /* Set the maximum height */
+    overflow-y: auto; /* Enable vertical scrolling */
 }
 
 
@@ -85,3 +85,4 @@ main {
         font-size: 0.9rem;
     }
 }
+
