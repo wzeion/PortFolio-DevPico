@@ -410,3 +410,75 @@ html {
 .project:hover {
   transform: scale(1.03);
 }
+
+
+
+
+
+
+#contact {
+  padding: 100px 20px;
+  background: #111;
+  color: #fff;
+  text-align: center;
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #77c4a7;
+}
+
+#contact p {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  color: #bbb;
+  max-width: 500px;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.5rem;
+  color: #77c4a7;
+  border: 2px solid #77c4a7;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px #77c4a7;
+  cursor: pointer;
+}
+
+.contact-link i {
+  font-size: 2rem;
+}
+
+.contact-link:hover {
+  background-color: #77c4a7;
+  color: #111;
+  box-shadow: 0 0 20px #77c4a7;
+  transform: scale(1.1);
+}
+
+.contact-intro {
+  text-align: center;
+  margin-bottom: 40px; /* optional spacing */
+  color: #bbb;         /* consistent with other text in #contact */
+  max-width: 500px;    /* match #contact p styling */
+  margin-left: auto;
+  margin-right: auto;
+}
