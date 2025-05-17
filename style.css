@@ -146,7 +146,7 @@ section {
     align-items: center;
 }
 
-.main-container .image {
+/* /* .main-container .image {
     width: 400px;
     height: auto;
     border-radius: 50%;
@@ -156,11 +156,26 @@ section {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+} */
+ .main-container .image {
+    width: 500px;
+    height: 500px; /* <- Ensures it's a perfect circle */
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 50px #077b32;
+} */
+
+
+/* .main-container .image img {
+    width: 100%;
+} */
+ 
+ .main-container .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Or try 'contain' if too much is cropped */
 }
 
-.main-container .image img {
-    width: 100%;
-}
 
 .main-container .image:hover {
     animation: animate 1.5s ease-in-out infinite;
