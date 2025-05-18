@@ -16,6 +16,11 @@ const textElements = document.querySelector(".typewriter-text");
 let textIndex = 0;
 let charIndex = 0;
 
+function toggleExpand() {
+    const area = document.getElementById("expandable");
+    area.classList.toggle("expanded");
+}
+
 function typeWriter() {
     if (charIndex < texts[textIndex].length) {
         textElements.innerHTML += texts[textIndex].charAt(charIndex);

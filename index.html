@@ -17,7 +17,7 @@
       <div class="logo">Sud0<span>ku</span></div>
       <div class="links">
         <a href="#">Home</a>
-        <a href="#">About</a>
+        <a href="#" onclick="toggleExpand()">About</a>
         <a href="#skills">Skills</a> <!-- ✅ Correct link -->
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
@@ -27,7 +27,7 @@
     <div class="dropdown">
       <div class="links">
         <a href="#">Home</a>
-        <a href="#">About</a>
+        <a href="#" onclick="toggleExpand()">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#">Contact</a>
@@ -52,6 +52,9 @@
         <p>
           19Y CSE STUDENT. I’m really passionate about technology, especially Game Development and Cybersecurity.
           With skills in Python, C, C++, and tools like Godot, I enjoy exploring new ideas and learning something new every day.
+        </p> 
+        <p id="expandable">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
         </p>
         <div class="social-links">
           <a href="https://github.com/MrS0lver" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
@@ -190,7 +193,12 @@
   <script>
     AOS.init({ offset: 0 });
   </script>
-
+  <script>
+    function toggleExpand() {
+      const area = document.getElementById("expandable");
+      area.classList.toggle("expanded");
+    }
+  </script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
   AOS.init();
